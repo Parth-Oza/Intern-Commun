@@ -1,0 +1,169 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <title>Welcome to Intern-Commune!</title>
+    <script src="about_us.js"></script>
+</head>
+
+<body>
+    <!-- cursor -->
+    <span id="circle" class="circle"></span>
+      <!-- cursor -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="title" href="/">Intern-Commune</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Student Portal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'jobpost' %}">Recruitment</a></li>
+                            <li><a class="dropdown-item" href="#">Examination</a></li>
+                            <li><a class="dropdown-item" href="#">Results</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="head my-3">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="videocontainer">
+            <div class="aboutus">
+                <hr>
+                <h2>Explanatory Video</h2>
+                <hr>
+            </div>
+
+            <div class="video">
+
+
+                <iframe width="1200" height="800" src="https://www.youtube.com/embed/ejG4bft5W58?controls=0">
+                </iframe>
+            </div>
+        </div>
+
+
+
+        <div class="aboutus">
+            <hr>
+            <h2>Developers of Intern-commune</h2>
+            <hr>
+            <div class="memberscard">
+
+
+                <div class="card" style="width: 68rem;">
+                    <img src="{% static 'images/bablu2.jpg' %} " class="card-img-top" alt="Oops!">
+                    <div class="card-body">
+                        <h5 class="card-title">Mit Prajapati</h5>
+                        <p class="card-text">Computer Engineering Student at Saffrony Institute of Technology.
+                            <strong>Mastery
+                                in Web-Development</strong>
+                        </p>
+                        <a href="https://www.linkedin.com/in/prajapati-mit-10453b20b" target="_blank" class="btn btn-primary">Connect with Mit</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 68rem;">
+                    <img src="{% static 'images/parth.jpg' %} " class="card-img-top" alt="Oops!">
+                    <div class="card-body">
+                        <h5 class="card-title">Parth Oza</h5>
+                        <p class="card-text">Computer Engineering Student at Saffrony Institute of Technology.
+                            <strong>Mastery
+                                in Competative coding</strong>
+                        </p>
+                        <a href="https://www.linkedin.com/in/oza-parth/" target="_blank" class="btn btn-primary">Connect with Parth</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 68rem;">
+                    <img src="{% static 'images/hrushi.jpg' %} " class="card-img-top" alt="Oops!">
+                    <div class="card-body">
+                        <h5 class="card-title">Hrushikesh Mane</h5>
+                        <p class="card-text">Computer Engineering Student at Saffrony Institute of Technology.
+                            <strong>Mastery
+                                in Video-Editing</strong>
+                        </p>
+                        <a href="https://www.linkedin.com/in/hrushikesh-mane" target="_blank" class="btn btn-primary">Connect with Hrushi</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 68rem;">
+                    <img src="{% static 'images/kriti.jpg' %}" class="card-img-top" alt="Oops!">
+                    <div class="card-body">
+                        <h5 class="card-title">Krit Patel</h5>
+                        <p class="card-text">Computer Engineering Student at Saffrony Institute of Technology.
+                            <strong>Mastery
+                                in Web-Development</strong>
+                        </p>
+                        <a href="https://www.linkedin.com/in/krit-patel-97336b210" target="_blank" class="btn btn-primary">Connect with Krit</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 68rem;">
+                    <img src="{% static 'images/nish.jpg' %} " class="card-img-top" alt="Oops!">
+                    <div class="card-body">
+                        <h5 class="card-title">Nishant Shah</h5>
+                        <p class="card-text">Computer Engineering Student at Saffrony Institute of Technology.
+                            <strong>Mastery
+                                in Web-Development</strong>
+                        </p>
+                        <a  href="https://www.linkedin.com/in/nishant-shah-32b9621b8/" target="_blank" class="btn btn-primary">Connect with Nishant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
