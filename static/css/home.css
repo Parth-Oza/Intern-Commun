@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+.home_container{
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 650px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    
+}
+
+ .internh1{ 
+     padding-top: 230px;
+} 
+
+.mainhead h1{
+              font-size: 60px;
+}
+
+.small{
+         font-size: 20px;
+}
+.benefits{
+    text-align: center;
+}
+td img{
+width: 400px;
+border: 1px dotted rgb(50, 99, 205);
+border-radius: 5px;
+box-shadow: 2px 3px rgba(160, 157, 157, 0.678);
+}
+
+.jumbotron{
+              width: 400px;
+              padding-left: 0px;
+              margin-left: 0px;
+              /* position: absolute; */
+}
+
+.jumbotron td img{
+               padding-left: 2px;
+               position:relative;
+               left: -130px;
+}
+.jumbotron td h2{
+                    position: relative;
+                    right: 100px;
+}
+
+
+table{
+    width: 1500px;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+    align-items: center;
+    padding-top:10px ;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+

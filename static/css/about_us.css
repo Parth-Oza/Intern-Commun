@@ -1,0 +1,46 @@
+.aboutus{
+    align-items: center;
+    text-align: center;
+}
+
+.memberscard{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.card{
+    margin: 10px 20px;
+    width: 400px;
+    border: 2px solid black ;
+    height: 450px;
+    background: transparent;
+    box-shadow: 10px 10px 7px #6d7eaa;
+
+}
+.aboutus h2{
+    background-image: url('bg2.jpg');
+    height: 60px;
+    align-items: center;
+    padding-top:10px ;
+    color: white;
+    text-shadow: 3px 3px 2px black;
+    
+}
+body{
+    background: url("bg4.jpg") no-repeat center center/cover;
+}
+.card-img-top{
+    box-shadow: 0px 4px 7px black; 
+}
+
+.video{
+    text-align:center;
+    /* margin-top: -42px; */
+    margin-bottom: 42px;
+    
+}
+
+
+
+
